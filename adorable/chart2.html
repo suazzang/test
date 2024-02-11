@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+        function snedAPI(){
+
+        debugger;
+        var xhr = new XMLHttpRequest();
+        var url = 'http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic'; /*URL*/
+        var queryParams = '?' + encodeURIComponent('serviceKey') + '='+'6bj2Fb%2FvjXglTzvEaR%2FUAdQU5hesiuE1TGgXyf6QgKEsKURczm1u5BWFqTUelgFh5fyAAEQ1UCr9u%2F0dbEtXvQ%3D%3D'; /*Service Key*/
+        // queryParams += '&' + encodeURIComponent('bgnde') + '=' + encodeURIComponent(' '); /**/
+        // queryParams += '&' + encodeURIComponent('endde') + '=' + encodeURIComponent(' '); /**/
+        // queryParams += '&' + encodeURIComponent('upkind') + '=' + encodeURIComponent(' '); /**/
+        // queryParams += '&' + encodeURIComponent('kind') + '=' + encodeURIComponent(' '); /**/
+        // queryParams += '&' + encodeURIComponent('upr_cd') + '=' + encodeURIComponent(' '); /**/
+        // queryParams += '&' + encodeURIComponent('org_cd') + '=' + encodeURIComponent(' '); /**/
+        // queryParams += '&' + encodeURIComponent('care_reg_no') + '=' + encodeURIComponent(' '); /**/
+        // queryParams += '&' + encodeURIComponent('state') + '=' + encodeURIComponent(' '); /**/
+        // queryParams += '&' + encodeURIComponent('neuter_yn') + '=' + encodeURIComponent('U'); /**/
+        // queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
+        // queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10'); /**/
+        // queryParams += '&' + encodeURIComponent('_type') + '=' + encodeURIComponent(' '); /**/
+        xhr.open('GET', url + queryParams);
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4) {
+                console.log('Status: '+this.status+'nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'nBody: '+this.responseText);
+            }
+        };
+
+        xhr.send('');
+        }
+
+        function sidoCodeSend(){
+            var xhr = new XMLHttpRequest();
+            var url = 'http://apis.data.go.kr/B551982/openApiSidoCd/openXmlSidoCd'; /*URL*/
+            var queryParams = '?' + encodeURIComponent('serviceKey') + '='+'6bj2Fb%2FvjXglTzvEaR%2FUAdQU5hesiuE1TGgXyf6QgKEsKURczm1u5BWFqTUelgFh5fyAAEQ1UCr9u%2F0dbEtXvQ%3D%3D'; /*Service Key*/
+            queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('10'); /**/
+            queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('300'); /**/
+            queryParams += '&' + encodeURIComponent('type') + '=' + encodeURIComponent('xml'); /**/
+            queryParams += '&' + encodeURIComponent('ac_year') + '=' + encodeURIComponent('2017'); /**/
+            xhr.open('GET', url + queryParams);
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    console.log('Status: '+this.status+'nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'nBody: '+this.responseText);
+                }
+            };
+
+            xhr.send('');
+        }
+    </script>
+    <title>Home</title><!--제목이 Home이다.-->
+  </head>
+  <body>
+    <h1 class="red">This is Home</h1><!--웹페이지 안에 This is Home을 작성한다. 그리고 css 파일에 red함수를 가져와서 쓴다.-->
+    <button onclick="snedAPI()">API</button>
+    <button onclick="sidoCodeSend()">주소API</button>
+  </body>
+</html>

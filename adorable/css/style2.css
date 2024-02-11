@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Sunflower:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=DM+Serif+Display:ital@1&family=Gowun+Dodum&family=Merriweather:ital,wght@1,700&family=Noto+Serif+KR:wght@500&family=Single+Day&family=Song+Myung&display=swap');
+
+/*font-family: 'Caveat', cursive;
+font-family: 'DM Serif Display', serif;
+font-family: 'Gowun Dodum', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Noto Serif KR', serif;
+font-family: 'Single Day', cursive;
+font-family: 'Song Myung', serif;;*/
+
+@font-face {
+    font-family: 'NanumSquareNeoTTF-EB';
+    src: url('./NanumSquareNeoTTF-dEb.woff')
+    format('woff');
+    font-weight: nomal;
+    font-size: nomal;
+  }
+
+@font-face {
+    font-family: 'NanumSquareNeoTTF-B';
+    src: url('./NanumSquareNeoTTF-bRg.woff')
+    format('woff');
+    font-weight: nomal;
+    font-size: nomal;
+}
+
+@font-face {
+    font-family: 'Binggrae-B';
+    src: url('./BinggraeII-Bold.otf')
+    format('woff');
+    font-weight: nomal;
+    font-size: nomal;
+}
+
+
+
+/* .btn-group {
+float: right;
+} */
+
+.nav-link {
+    color: #000000;
+}
+.text-md-start {
+    color: rgb(24, 20, 20);
+}
+
+
+.bg {
+    background-image: url(../image/후원하기이미지.jpg);
+    opacity: 70%;
+    height: 1500px;
+    position: relative;
+}
+
+.input_form {
+    text-align: center;
+    background-color: floralwhite;
+    position: absolute;
+    width: 700px;
+    height: 1000px;
+    z-index: 1;
+    border-radius: 5rem;
+    
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+#logo {
+    border-style: none;
+}
+
+.title { 
+margin: 10px;
+padding: 20px;
+}
+.title_sub {
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+section > h1{font-family: 'NanumSquareNeoTTF-EB';}
+section > p {font-family: 'NanumSquareNeoTTF-B';}
+
+h4 {
+    padding: 20px;
+}
+#support2 {
+    border: 5px solid #dbd9d9;
+    box-shadow: inset 1px 1px 2px #babebc, inset -1px -1px 2px #fff;
+    border-radius: 2rem;
+    width: 600px;
+    height: 700px;
+    position: relative;
+}

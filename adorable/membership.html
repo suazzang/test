@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adorable</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://www.figma.com/community/plugin/735098390272716381'">
+</head>
+<body>
+    <!--헤더영역 시작-->
+    <header class="border  overflow-hidden">
+        <div class="bg ">
+            <video muted autoplay loop width="100%">
+                <source src="./image/헤더영상.mp4" type="video/mp4">
+            </vieod>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">홈</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">로그인</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./membership.html">회원가입</a>
+                        </li>
+                        <li class="nav-item">   
+                            <a class="nav-link" href="#">마이페이지</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column align-items-center">
+            <button type="button" class="btn" id="logo"><h1>adorable
+                <a href="./index.html"></a>
+                <img src="./image/logo.png" alt="logo">
+            </h1></button>
+            <p>반려동물이란 짝, 동반자, 동무<br>
+                평생을 함께하는 “사랑스러운” 나의 가족</p>
+        </div>
+    </header>
+    <!--헤더영역 끝-->
+    <!--메뉴바 시작-->
+    <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menubar"
+                aria-controls="menubar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menubar">
+                <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            유기견보호센터 소개
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="plan">기획의도</a></li>
+                            <li><a class="dropdown-item" href="#">유기동물통계</a></li>
+                            <li><a class="dropdown-item" href="#">문의사항</a></li>
+                            <li><a class="dropdown-item" href="#">연락처 및 약도</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            사랑스러운 반려견 입양
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">입양절차</a></li>
+                            <li><a class="dropdown-item" href="#">입양자격</a></li>
+                            <li><a class="dropdown-item" href="#">책임비 안내</a></li>
+                            <li><a class="dropdown-item" href="#">보호중인 아이들</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            입양후기
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">입양후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            스토어
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">사료/간식</a></li>
+                            <li><a class="dropdown-item" href="#">장난감</a></li>
+                            <li><a class="dropdown-item" href="#">미용</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            후원하기
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="support.html">후원하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--메뉴바 끝-->
+    <!--실시간 채팅상담-->
+    <button id="live-chat" class="text-center text-dark">실시간 채팅상담</button>
+    <section class="container mt-3">
+        <div class="container signup-container" id="membership">
+            <form class="card p-4">
+                <h2 class="text-center mb-4">회원가입</h2>
+                <div class="mb-3">
+                    <label for="username" class="form-label">사용자 이름</label>
+                    <input type="text" class="form-control" id="username" placeholder="사용자 이름" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">아이디</label>
+                    <input type="email" class="form-control" id="id" placeholder="이메일 주소" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">비밀번호</label>
+                    <input type="password" class="form-control" id="password" placeholder="비밀번호" required>
+                </div>
+                <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">비밀번호 확인</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="비밀번호 확인" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">회원가입</button>
+                <p class="mt-3 text-center">이미 계정이 있으신가요? <a href="./login.html">로그인</a></p>
+            </form>
+        </div>
+    </section>
+    <!--풋터 시작-->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-4">
+              <h5>문의사항</h5>
+              <p>전화:010-3478-9812 <br>
+                이메일:sua77777@naver.com <br>
+                카카오톡ID:sua77777</p>
+            </div>
+            <div class="col-md-4">
+              <h5>adorable 무통장 입금 계좌번호</h5>
+              <p>신한은행:110-483-940873 (예금주 : 박수아)<br>
+                국민은행:110-483-940873 (예금주 : 박수아)</p>
+            </div>
+            <div class="col-md-4">
+              <h5>보호소 정보</h5>
+              <p>상호:adorable <br>
+                대표:박수아 <br>
+                주소:성남시 중원구</p>
+            </div>
+            <div class="row">
+                <p class="py-4 mb-0 text-center">Copyright <i class="bi bi-c-circle"></i>Korean Animal Welfare Association <a href="#" target="_blank" class="gugi-font link-Primary text-decoration-none">adorable</a></p>
+            </div>
+          </div>
+        </div>
+    </footer>
+        <!--풋터 끝-->
+    </main>
+    <!--기획의도 끝-->
+    <!--메인섹션 끝-->
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>

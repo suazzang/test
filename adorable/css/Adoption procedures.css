@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Sunflower:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Sunflower:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=DM+Serif+Display:ital@1&family=Gowun+Dodum&family=Merriweather:ital,wght@1,700&family=Noto+Serif+KR:wght@500&family=Single+Day&family=Song+Myung&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');  
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/*$font: 'Lato', sans-serif;
+
+$primary: #79C7C5;
+$secondary: #A1E2D9;
+$white: #F9FBFF;
+$dark: #777777;*/
+
+
+@font-face {
+    font-family: 'NanumSquareNeoTTF-EB';
+    src: url('./NanumSquareNeoTTF-dEb.woff')
+    format('woff');
+    font-weight: nomal;
+    font-size: nomal;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoTTF-B';
+    src: url('./NanumSquareNeoTTF-bRg.woff')
+    format('woff');
+    font-weight: nomal;
+    font-size: nomal;
+}
+
+@font-face {
+    font-family: 'Binggrae-B';
+    src: url('./BinggraeII-Bold.otf')
+    format('woff');
+    font-weight: nomal;
+    font-size: nomal;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    opacity: 80%;
+}
+
+.nav-link {
+    color: #000000;
+}
+.text-md-start {
+    color: rgb(24, 20, 20);
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    /* background-image: url(../image/배경.jpg); */
+}
+
+/* 헤더영역 */
+header {
+    padding: 0;
+    background-size: cover;
+    background-position: relative;
+    background-attachment: fixed;
+    position: relative;
+}
+.bg {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin: 0px auto;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+#logo {
+    border-style: none;
+}
+
+/* 헤더영역 끝*/
+
+.card-header {
+    background-color: #427deb;
+}
+
+.carousel-item {
+    font-family: 'Sunflower','NanumSquareNeoTTF-EB', sans-serif;
+}
+
+
+/* 실시간채팅 */
+#live-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  
+    border: none;
+    border-radius: 40px;
+    background: rgb(255, 255, 255);
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    box-shadow: 0px 5px 15px gray;
+    cursor: pointer;
+    z-index:1;
+    opacity: 80%;
+    text-decoration: none;
+}
+
+
+
+/*풋터*/
+footer {
+    background-image: url(../image/풋터이미지1.jpg);
+    background-size: cover;
+}
+/*풋터*/
+
+@media (min-width:310) and (max-width:731){
+#plan {
+background-image: url(../image/기획의도.jpg);
+    }
+}
+
+
+
+#log{
+    justify-content: center;
+    display: flex;
+
+}
+
+.pagination>li>a {
+    border: 0 !important;
+}
+
+#carouselExampleSlidesOnly {
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
+/*입양절차*/
+
+#Adoption-procedures-body {
+    display: grid;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#Adoption-procedures-card{
+    background: linear-gradient(to top left, #79C7C5 10%, #F9FBFF 100%);
+}
+
+#Adoption-procedures>h2{
+    font-family: 'NanumSquareNeoTTF-EB';
+}
+
+#Adoption-procedures-fade-right {
+    transition: all 1s linear;
+    width: 100%;
+    opacity: 70%;
+}
+
+
+/*입양절차*/
+
+/*입양자격*/
