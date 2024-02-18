@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .pagination>li>a {
+      border: 0 !important;
+    }
+    
+  </style>
+</head>
+<body>
+  <section>
+    <!-- 결제정보 및 신용카드 자동이체 폼 시작 -->
+  <div class="container">
+    <div class="card card-form">
+      <form id="paymentForm">
+        <h2 class="text-center mb-4">결제 정보</h2>
+
+        <!-- 결제정보 입력 폼 -->
+        <div class="form-group">
+          <label for="cardNumber">카드 번호</label>
+          <input type="text" class="form-control" id="cardNumber" placeholder="카드 번호" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="expirationDate">만료일</label>
+            <input type="text" class="form-control" id="expirationDate" placeholder="MM/YYYY" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="cvc">CVC</label>
+            <input type="text" class="form-control" id="cvc" placeholder="CVC" required>
+          </div>
+        </div>
+
+        <!-- 자동 이체 전환 스위치 -->
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="autoDebit">
+          <label class="form-check-label" for="autoDebit">신용카드 자동이체 활성화</label>
+        </div>
+
+        <!-- 결제 버튼 -->
+        <button type="submit" class="btn btn-primary btn-block">결제</button>
+      </form>
+    </div>
+  </div>
+  <!-- 결제정보 및 신용카드 자동이체 폼 끝 -->
+
+  <!-- 부트스트랩 및 부트스트랩 자바스크립트 및 jQuery 가져오기 -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- 카드 번호, 만료일, CVC 등을 처리하기 위한 자바스크립트 코드 -->
+  <script>
+    $(document).ready(function () {
+      // 결제 폼 제출 시 처리
+      $('#paymentForm').submit(function (event) {
+        event.preventDefault();
+        
+        // 여기에서 서버로 결제 정보를 전송하고 자동 이체 여부에 따라 처리하는 로직을 추가해야 합니다.
+        // 이 예제에서는 간단한 콘솔 메시지만 출력합니다.
+        console.log('결제 정보 전송 및 처리');
+
+        // 자동 이체가 활성화되었는지 확인
+        var autoDebitEnabled = $('#autoDebit').prop('checked');
+
+        if (autoDebitEnabled) {
+          console.log('자동 이체 활성화됨');
+          // 여기에서 신용카드 자동 이체에 관련된 로직을 추가합니다.
+        }
+      });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- 카드 번호, 만료일, CVC 등을 처리하기 위한 자바스크립트 코드 -->
+  <script>
+    $(document).ready(function () {
+      // 결제 폼 제출 시 처리
+      $('#paymentForm').submit(function (event) {
+        event.preventDefault();
+        
+        // 여기에서 서버로 결제 정보를 전송하고 자동 이체 여부에 따라 처리하는 로직을 추가해야 합니다.
+        // 이 예제에서는 간단한 콘솔 메시지만 출력합니다.
+        console.log('결제 정보 전송 및 처리');
+
+        // 자동 이체가 활성화되었는지 확인
+        var autoDebitEnabled = $('#autoDebit').prop('checked');
+
+        if (autoDebitEnabled) {
+          console.log('자동 이체 활성화됨');
+          // 여기에서 신용카드 자동 이체에 관련된 로직을 추가합니다.
+        }
+      });
+    });
+  </script>
+  </section>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
